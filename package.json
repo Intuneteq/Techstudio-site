@@ -45,9 +45,7 @@
     "format:check": "prettier --check \"./src/**/*.{js,jsx,json,css,scss,md}\"",
     "lint": "eslint --fix \"./src/**/*.{js,jsx,json}\"",
     "test": "react-scripts test --env=jsdom --watchAll",
-    "test:noWatch": "react-scripts test --env=jsdom --watchAll=false",
-    "preci": "rm -rf node_modules",
-    "ci": "yarn install --frozen-lockfile"
+    "test:noWatch": "react-scripts test --env=jsdom --watchAll=false"
   },
   "eslintConfig": {
     "extends": [
