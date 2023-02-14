@@ -20,10 +20,8 @@ jobs:
         cache: 'yarn'
       # install applicaion dependencies
     - name: Install dependencies
-      uses: borales/actions-yarn@v4
-      with:
-        cmd: install
-    - name: Build production bundle
-      uses: borales/actions-yarn@v4
-      with:
-        cmd: build:prod
+      run: |
+        yarn install
+    - name: build
+      run: |
+        yarn build
