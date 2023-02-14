@@ -17,11 +17,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        #cache: 'yarn'
+        cache: 'yarn'
       # install applicaion dependencies
     - name: Install dependencies
       run: |
         yarn install
     - name: build
       run: |
-        CI=false yarn build
+        CI=false yarn run build
