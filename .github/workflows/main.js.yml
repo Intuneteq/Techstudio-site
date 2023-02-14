@@ -24,4 +24,4 @@ jobs:
         yarn install
     - name: build
       run: |
-        CI=false yarn run build
+        CI=false yarn build:prod
