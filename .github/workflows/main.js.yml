@@ -23,7 +23,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - name: "Handle sizing"
     - run: export NODE_OPTIONS="--max_old_space_size=4096"
           #  pm2 stop 2
           #  pm2 start 2
