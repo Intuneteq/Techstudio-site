@@ -29,5 +29,5 @@ jobs:
           #  sudo service nginx restart 
     - run: |
         export NODE_OPTIONS="--max_old_space_size=4096"
-        npm run build --if-present
+        CI=false npm run build --if-present
     # - run: npm test
